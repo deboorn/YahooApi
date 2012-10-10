@@ -59,6 +59,11 @@
 			}
 		}
 		
+		/**
+		 * make json request to api for object
+		 * @param string $url
+		 * @return object
+		 */
 		public function getJson($url){
 			try{	
 				$o = new OAuth($this->key, $this->secret, OAUTH_SIG_METHOD_HMACSHA1, OAUTH_AUTH_TYPE_URI);
